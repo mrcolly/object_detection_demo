@@ -23,16 +23,14 @@ tf.gfile = tf.io.gfile
 
 
 def load_model(model_name):
-    model_dir = "/Users/alessio.colombo/Documents/projects/python/orangeBallDetectorTensor/trained_inference_graph/saved_model/"
-
+    model_dir = "/Users/alessio.colombo/Documents/projects/python/rubikDetect/fine_tuned_model/saved_model"
     model = tf.saved_model.load(str(model_dir))
     model = model.signatures['serving_default']
-
     return model
 
 
-MODEL_NAME = 'trained_inference_graph'
-PATH_TO_LABELS = 'labelmap.pbtxt'
+MODEL_NAME = 'frozen_inference_graph'
+PATH_TO_LABELS = 'label_map.pbtxt'
 
 category_index = label_map_util.create_category_index_from_labelmap(
     PATH_TO_LABELS, use_display_name=True)

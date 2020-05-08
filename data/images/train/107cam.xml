@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>107cam.jpg</filename>
+	<path>/Users/alessio.colombo/Documents/projects/python/rubikDetect/data/images/107cam.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>rubik</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>80</xmin>
+			<ymin>23</ymin>
+			<xmax>174</xmax>
+			<ymax>120</ymax>
+		</bndbox>
+	</object>
+</annotation>
